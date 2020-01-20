@@ -1,0 +1,56 @@
+html, body{
+    font-size: 4px;
+    font-family: sans-serif;
+    background: #f1f6f6;
+}
+
+.site__header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.header__info{
+    background: white;
+    width: 360rem;
+    padding: 2rem;
+    display: flex;
+    /*flex-direction: row;
+    flex-wrap: wrap;*/
+    flex-flow: row wrap;
+}
+
+.header__name{
+    color: #00a09b;
+    font-size: 8rem;
+    padding: 2rem;
+}
+
+.header__title{
+    color: #bdbdbd;
+    font-size: 4rem;
+    padding: 6rem;
+}
+
+.password__text{
+    font-size: 5rem;
+    font-weight: bold;
+    padding-top: 4rem;
+    padding-left: 210rem;
+    color: #00c4c0;
+}
+
+.site__user{
+    font-size: 6rem;
+    color: #00a09b;
+    padding: 4rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.user__icon{
+    padding: 1rem;
+}
+
+
+
