@@ -5,13 +5,14 @@ html, body{
 }
 
 .site__header{
+    background: white;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 
 .header__info{
-    background: white;
+    /* background: white; */
     width: 360rem;
     padding: 2rem;
     display: flex;
@@ -52,5 +53,85 @@ html, body{
     padding: 1rem;
 }
 
+.body{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.site__aside{
+    margin: 40px;
+    border-radius: 2rem;
+    background: white;
+    width: 318px;
+    height: 669px;
+    /* padding: 50px 100px;  */
+    /* padding-top: 50px;  */
+    /* padding-left: 40px;
+    padding-right: 40px; */
+    font-size: 16px;
+}
+
+.aside__title{
+    padding: 60px 60px 10px 60px;
+    color: #e1e6e6;
+    font-family: Montserrat;
+    font-size: 14px;
+}
+
+.aside__pbasico{
+    padding: 10px 60px;
+    color: #019c97;
+    font-family: "Open Sans";
+    font-size: 15px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.aside__clase{
+    /* padding: 50px; */
+    padding: 10px 60px;
+    color: #747e7e;
+    font-family: "Open Sans";
+    font-size: 15px;
+}
+
+.aside__footer{
+    padding-top: 70px;
+}
+
+.footer__title{
+    padding: 0px 60px;
+    color: #00a09b;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footer__input{
+    padding: 10px 20px;   
+}
+
+.input-name{
+    background-color: #f1f6f6;
+    border-radius: 24px;
+    border: 1px solid #dde4e4; 
+    width: 201px;
+    height: 47px;
+    font-family: "Open Sans";
+    font-size: 14px;
+    color: #c0c0c0;
+    text-align: center;
+}
+
+.btn{
+    width: 53px;
+    height: 53px;
+    border-radius: 60%;
+    background-color: #00a09b;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border: 1px solid #00a09b; 
+}
 
 
