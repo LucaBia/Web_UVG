@@ -25,6 +25,8 @@ html, body{
     color: #00a09b;
     font-size: 8rem;
     padding: 2rem;
+    font-weight: bold;
+
 }
 
 .header__title{
@@ -37,14 +39,14 @@ html, body{
     font-size: 5rem;
     font-weight: bold;
     padding-top: 4rem;
-    padding-left: 210rem;
+    padding-left: 200rem;
     color: #00c4c0;
 }
 
 .site__user{
     font-size: 6rem;
     color: #00a09b;
-    padding: 4rem;
+    padding: 6rem;
     display: flex;
     flex-direction: row;
 }
@@ -56,10 +58,10 @@ html, body{
 .body{
     display: flex;
     flex-flow: row wrap;
+    margin: 40px;
 }
 
 .site__aside{
-    margin: 40px;
     border-radius: 2rem;
     background: white;
     width: 318px;
@@ -97,6 +99,7 @@ html, body{
 
 .aside__footer{
     padding-top: 70px;
+    border-top:1px solid grey;
 }
 
 .footer__title{
@@ -123,6 +126,12 @@ html, body{
     text-align: center;
 }
 
+.site__functions{
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: flex-end; */
+}
+
 .btn{
     width: 53px;
     height: 53px;
@@ -134,4 +143,136 @@ html, body{
     border: 1px solid #00a09b; 
 }
 
+.functions__title{
+    padding-left: 80px;
+    color: #00938e;
+    font-family: "Open Sans";
+    font-size: 29px;
+    display: flex;
+    flex-flow: row wrap;
+}
 
+.icon__edit{
+    padding-left: 30px;
+    color: #a0aaaa;
+}
+
+.icon__delete{
+    padding-left: 15px;
+    color: #c78181;
+}
+
+.btn_addBook{
+    width: 206px;
+    height: 49px;
+    border-radius: 25px;
+    background-color: #00bc5d;
+    color: white;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #00bc5d; 
+}
+
+.btn_addCategory{
+    width: 242px;
+    height: 49px;
+    border-radius: 25px;
+    background-color: #00bcb7;
+    color: white;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #00bcb7; 
+}
+
+.functions__buttons{
+    padding-left: 400px;
+    display: flex;
+    justify-content: flex-end;
+} 
+
+.btn_addCategory{
+    margin-left: 30px;
+}
+
+.right__contetn{
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: column;
+}
+
+.language__spanish{
+    color: #019c97;
+    font-family: "Open Sans";
+    font-size: 15px;
+}
+
+.language__english{
+    color: #a6a7a7;
+    font-family: "Open Sans";
+    font-size: 15px;
+    padding-left: 40px;
+}
+
+.align{
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 80px;
+    padding-top: 20px;
+}
+
+.book {
+    border-radius: 2rem;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+    display: block;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    width: 226px;
+    margin-right: 50px;
+}
+
+.book__image {
+    background-position: center;;
+    background-size: cover;
+    height: 70rem
+}
+
+.book__footer {
+    background: white;
+    padding: 16px;
+    position: relative;
+}
+
+.book__title {
+    color: #019c97;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.book__size {
+    padding-top: 1rem;
+    color: #777777;
+    font-size: 3rem;
+}
+
+.book__actions {
+    bottom: 0;
+    height: 14rem;
+    position: absolute;
+    right: 0;
+    width: 12rem;
+}
+
+.site__books{
+    padding: 50px;
+    padding-left: 80px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.fa-ellipsis-v {
+    font-size: 20px;
+    color: grey;
+    padding: 15px;
+}
