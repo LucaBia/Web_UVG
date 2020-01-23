@@ -130,6 +130,7 @@ html, body{
     display: flex;
     flex-flow: row wrap;
     /* justify-content: flex-end; */
+    border-bottom:1px solid grey;
 }
 
 .btn{
@@ -275,4 +276,8 @@ html, body{
     font-size: 20px;
     color: grey;
     padding: 15px;
+}
+
+.site__languages{
+    border-bottom:1px solid grey;
 }
