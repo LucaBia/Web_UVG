@@ -13,7 +13,7 @@ const renderTablero = (estado) => {
             filaVisual.style.display = 'flex'
             fila.map(
                 (casilla, indexCasilla) => {
-                    filaVisual.appendChild(renderCasilla(fila, casilla));
+                    filaVisual.appendChild(renderCasilla(indexFila, indexCasilla, casilla, estado));
                 }
             )
             tableroVisual.appendChild(filaVisual);
@@ -22,13 +22,44 @@ const renderTablero = (estado) => {
     return tableroVisual;
 }
 
-const renderCasilla = (fila, casilla) => {
+const renderCasilla = (filaIndex, casillaIndex, casilla, estado) => {
     const casillaVisual = document.createElement('div');
+    casillaVisual.style.display = "flex";
     casillaVisual.style.background = "green";
 	casillaVisual.style.height = "100px";
     casillaVisual.style.width = "100px";
     casillaVisual.style.border = "1px solid";
+    casillaVisual.style.alignItems = "center";
+    casillaVisual.style.justifyContent = "center";
+    casillaVisual.appendChild(renderPieza(casilla));
+
+    casillaVisual.onclick = () => agregarPieza(filaIndex, casillaIndex, estado);
+
     return casillaVisual;
+}
+
+const renderPieza = (valor) => {
+    const pieza = document.createElement('div');
+    pieza.style.height = "90px";
+    pieza.style.width = "90px";
+    pieza.style.borderRadius = "50px";
+    if (valor === 1){
+        pieza.style.background = "black";
+    }else if(valor === 2){
+        pieza.style.background = "white";
+    }
+
+    return pieza;
+}
+
+const agregarPieza = (fila, casilla, estado) => {
+    if (estado.tableroInicial[fila][casilla] === 0){
+        estado.tableroInicial[fila][casilla] = estado.turnoJugador;
+        console.log(estado);
+        estado.turnoJugador = estado.turnoJugador == 1 ? 2 : 1;
+    }
+    render(root, estado);
+    
 }
 
 const tableroInicial = [
