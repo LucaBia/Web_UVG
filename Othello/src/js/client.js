@@ -21,6 +21,20 @@ const render = (posicion, estado) => {
 }
 
 const renderTablero = (estado) => {
+    const contenedor = document.createElement('div');
+    const fondoTablero = document.createElement('div');
+    const titulo = document.createElement("h1");
+    titulo.textContent = "Othello";
+    fondoTablero.appendChild(titulo);
+    titulo.style.textAlign = "center";
+
+    fondoTablero.style.background = "brown";
+    fondoTablero.style.padding = "30px";
+    fondoTablero.style.borderRadius = "20px";
+    fondoTablero.style.display = "flex column";
+    fondoTablero.style.alignItems = "center";
+    fondoTablero.style.justifyContent = "center";
+    fondoTablero.style.height = "900px";
     const tableroVisual = document.createElement('div');
     estado.tableroInicial.map(
         (fila, indexFila) => {
@@ -34,7 +48,13 @@ const renderTablero = (estado) => {
             tableroVisual.appendChild(filaVisual);
         }
     )
-    return tableroVisual;
+
+    fondoTablero.appendChild(tableroVisual);
+    contenedor.appendChild(fondoTablero)
+    contenedor.style.display = "flex";
+    contenedor.style.alignItems = "center";
+    contenedor.style.justifyContent = "center";
+    return contenedor;
 }
 
 const renderCasilla = (filaIndex, casillaIndex, casilla, estado) => {
